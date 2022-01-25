@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.caixa-superior{
+    background: url("./background.svg") no-repeat;
+    background-size: cover;
+}
+
+.cabecalho{
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho .titulo-cabecalho{
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.cabecalho a{
+    text-decoration: none;
+}
+
+.cabecalho .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    width: auto;
+
+    transition: 1s;
+}
+
+.cabecalho .menu a{
+    margin-right: 2rem;
+
+    transition: .3s;
+}
+
+.cabecalho .menu a:hover{
+    color: #40BB15;
+}
+
+.link-cabecalho{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1{
+    display: none;
+}
+
+form{
+    background: #FFFFFF;
+    border-radius: 10px; 
+
+    margin: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;   
+}
+
+.titulo-formulario{
+    font-size: 24px;
+    color: #252B42;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+    color: #252B42;
+}
+
+.mostrar-formulario{
+    visibility: visible;
+    opacity: 1;
+}
+
+input{
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    height: 45px;
+    width: 80%;
+
+    padding: .2rem;
+}
+
+textarea{
+    display: block;
+    height: 80px;
+    width: 80%;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+button{
+    width: 80%;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #40BB15;
+    color: #FFFFFF;
+
+    margin-left: 10%;
+}
+
+#titulo-meio{
+    font-size: 2.5rem;
+    color: #252B42;
+    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    text-align: center;
+}
+
+.caixa-central{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 50px;
+}
+
+.card{
+    width: 300px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    border: 1px solid #A9D6FF;
+}
+
+.titulo-card{
+    background: #219653;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.25rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /*border-radius: 10px 10px 0 0 */
+}
+
+ul{
+    padding: 20px;
+}
+
+li{
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.caixa-inferior{
+    background: #00095d;
+}
+
+#titulo-inferior{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.paragrafo-inferior{
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-align: justify;
+    padding: 20px 50px 50px 50px;
+}
+
+.back-to-top{
+    background: #40BB15;
+    color: #FFFFFF;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    padding: 1.5rem;
+    clip-path: circle();
+
+    font-size: 2rem;
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+    transform: translateY(100%);
+
+    text-decoration: none;
+}
+
+.back-to-top.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (min-width: 965px){
+    .caixa-superior{
+        background-size: cover;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        height: 100vh;
+    }
+
+    .cabecalho .menu{
+        flex-direction: row;
+
+    }
+
+    .cabecalho .menu a{
+        margin-right: 3rem;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .cabecalho .menu a:hover{
+        color: #40BB15;
+    }
+
+    h1{
+        font-size: 3rem;
+        color: #FFFFFF;
+        position: relative;
+        top: 280px;
+        margin-left: 35px;
+
+        display:inline;
+    }
+
+    form{
+        width: 50%;
+        padding: 2rem;
+
+        position: relative;
+        top: 50px;
+        float: right;
+        
+    }
+
+    #titulo-meio{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .caixa-central{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    
+}

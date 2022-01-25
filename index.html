@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Contábil</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="home" class="caixa-superior">
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho">Dev Contábil</h2>
+            <div class="menu">
+                <a href="#titulo-inferior" class="link-cabecalho">Quem somos</a>
+                <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
+                <a class="link-cabecalho" onclick="mostrarFormulario()">Contato</a>
+            </div>
+        </div>
+
+        <h1>Dev Contábil</h1>
+
+        <form id="formulario-contato" action="" method="">
+            <h3 class="titulo-formulario">Entre em contato</h3>
+            <label>
+                Nome
+                <input type="text" name="name" placeholder="Digite seu nome" required>
+            </label>
+
+            <label>
+                E-mail
+                <input type="email" name="email" placeholder="Digite seu E-mail" required>
+            </label>
+
+            <label>
+                Fale conosco
+                <textarea name="question" placeholder="Qual sua dúvida?" required></textarea>
+            </label>
+
+            <input type="hidden" name="_captcha" value="false">
+
+            
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <h2 id="titulo-meio">Nossos serviços</h2>
+
+    <div class="caixa-central">
+        <div class="card">
+            <h3 class="titulo-card">Contabilidade Completa</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cuidamos do seu negócio</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cuidamos de você</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="caixa-inferior">
+        <h2 id="titulo-inferior">Sobre nós</h2>
+        <p class="paragrafo-inferior">
+            Somos um  escritório moderno, versátil e dinâmico, cujo objetivo é levar soluções criativas e eficazes aos clientes, tendo como sócios o Dr. Kleber Bissolatti e a Dra. Monique Antonacci, profissionais multidisciplinares com sólida formação e vasta experiência em questões de grande complexidade.
+
+            Peliciotti Advocacia é um escritório que preza pela qualidade dos serviços jurídicos, com amplo conhecimento e experiência de atuação. Contamos com uma equipe de profissionais experientes para atender nossos clientes de forma personalizada, contemplando as diversas áreas do Direito. 
+            
+            Nosso escritório está comprometido em ter os melhores profissionais, advogados, colaboradores e parceiros, empenhados em oferecer seus serviços com grande sensibilidade e comprometimento, com a mais alta competência e comunicação com os clientes.
+            
+            Praticamos a lei com vocação e paixão pela profissão para responder com excelência à confiança depositada em nós pelos nossos clientes.
+            
+             
+        </p>
+    </div>
+
+    <a href="#home" class="back-to-top">&uarr;</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
